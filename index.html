@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index - homepage</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('index_background.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: 'Microsoft YaHei', sans-serif;
+            color: #333;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.3);
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 600px;
+            margin: 20px;
+            backdrop-filter: blur(5px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .avatar {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            margin: 0 auto 2rem;
+            overflow: hidden;
+            border: 2px solid #fff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .info {
+            margin: 2rem 0;
+            line-height: 1.5;
+        }
+
+        .info p {
+            margin: 1rem 0;
+            color: #34495e;
+        }
+
+        .name-id {
+            font-weight: 450;
+            color: #2c3e50;
+            font-size: 1.5rem;
+            font-family: 'Microsoft YaHei', sans-serif;
+        }
+
+        .description {
+            font-family: 'STKaiti', '楷体', serif;
+            font-size: 1.2rem;
+            color: #2c3e50;
+        }
+
+        .enter-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background-color: #6cadd8;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 1.3rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .enter-button:hover {
+            background-color: #2980b9;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="avatar">
+            <img src="avatar.jpg" alt="头像">
+        </div>
+        <div class="info">
+            <p class="name-id">郭宝 GUO Bao</p>
+            <p class="name-id">24462527</p>
+            <p class="description">因为离得比较近，所以经常会去旺角逛街吃美食，于是做了一份旺角的旅游攻略。</p>
+            <p class="description">这个网站分为两个页面，现在我们处于homepage，请点击下方“ENTER”进入详细的旺角旅游攻略页面～</p>
+        </div>
+        <a href="Mongkok.html" class="enter-button">Enter</a>
+    </div>
+</body>
+</html> 
